@@ -1,1 +1,15 @@
-
+spring:
+  webflux:
+    hiddenmethod:
+      filter:
+        enabled: true
+  mongodb:
+    embedded:
+      version: 5.0.5
+#  data:
+#    mongodb:
+#      host: localhost
+#      port: 27017
+#      username: banana
+#      password: banana
+#      database: banana
