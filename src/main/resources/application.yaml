@@ -13,6 +13,30 @@ spring:
 #      username: banana
 #      password: banana
 #      database: banana
+
 logging:
   level:
     web: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["health", "info", "env", "httptrace"]
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+
+info:
+  project:
+    version: @project.version@
+  java:
+    version: @java.version@
+  spring:
+    framework:
+      version: @spring-framework.version@
+    data:
+      version: @spring-data-bom.version@
