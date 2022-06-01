@@ -13,3 +13,6 @@ spring:
 #      username: banana
 #      password: banana
 #      database: banana
+logging:
+  level:
+    web: DEBUG

@@ -31,4 +31,8 @@ public class CartItem {
     public void increment() {
         this.quantity += 1;
     }
+
+    public void decrement() {
+        this.quantity -= 1;
+    }
 }
