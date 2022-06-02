@@ -2,12 +2,13 @@ package io.safecorners.springbootreactive.dataloader;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Profile;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.stereotype.Component;
 
 import io.safecorners.springbootreactive.domain.Item;
 
-@Component
+//@Component
 public class TemplateDatabaseLoader {
 
     @Bean
