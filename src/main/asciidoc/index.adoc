@@ -1,0 +1,7 @@
+= Spring Boot Reactive
+
+include::{snippets}/findAll/curl-request.adoc[]
+
+include::{snippets}/findAll/response-body.adoc[]
+
+include::{snippets}/findAll/httpie-request.adoc[]
