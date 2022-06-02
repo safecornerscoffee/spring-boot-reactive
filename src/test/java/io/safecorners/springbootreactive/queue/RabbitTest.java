@@ -46,6 +46,9 @@ public class RabbitTest {
 
     @Test
     void verifyMessage() throws InterruptedException {
+
+        itemRepository.deleteAll().as(StepVerifier::create).verifyComplete();
+
         webTestClient.post().uri("/rabbit/items")
                 .bodyValue(new Item("Alf alarm clock", "nothing important", 19.99))
                 .exchange()
