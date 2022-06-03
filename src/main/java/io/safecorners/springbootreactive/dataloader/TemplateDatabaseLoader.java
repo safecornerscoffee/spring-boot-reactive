@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 import io.safecorners.springbootreactive.domain.Item;
 
-//@Component
+@Component
 public class TemplateDatabaseLoader {
 
     @Bean

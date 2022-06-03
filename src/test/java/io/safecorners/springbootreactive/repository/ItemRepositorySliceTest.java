@@ -31,4 +31,23 @@ public class ItemRepositorySliceTest {
                 })
                 .verifyComplete();
     }
+
+    @Test
+    void itemRepositoryFindsItemsByName() throws InterruptedException {
+        Item sampleItem = new Item("iPhone 11", "upgrade", 999.99);
+
+        itemRepository.save(sampleItem).block();
+
+        itemRepository.findByName("iPhone 11")
+                .as(StepVerifier::create)
+                .expectNextMatches(item -> {
+                    assertThat(item.getId()).isNotNull();
+                    assertThat(item.getName()).isEqualTo("iPhone 11");
+                    assertThat(item.getDescription()).isEqualTo("upgrade");
+                    assertThat(item.getPrice()).isEqualTo(999.99);
+
+                    return true;
+                })
+                .verifyComplete();
+    }
 }

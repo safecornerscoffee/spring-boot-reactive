@@ -5,3 +5,8 @@ services:
     restart: always
     ports:
       - "27017-27019:27017-27019"
+  rabbitmq:
+    image: rabbitmq:3.7.25-management-alpine
+    restart: always
+    ports:
+    - "5672:5672"
