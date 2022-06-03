@@ -1,0 +1,4 @@
+logging:
+  level:
+    reactor: debug
+    io.rsocket.FrameLogger: debug
