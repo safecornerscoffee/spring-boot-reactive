@@ -1,0 +1,13 @@
+server:
+  port: 9000
+
+spring:
+  rsocket:
+    server:
+      port: 7000
+
+logging:
+  level:
+    reactor: debug
+    io.rsocket: debug
+    io.safecorners.rsocketserver.service: debug

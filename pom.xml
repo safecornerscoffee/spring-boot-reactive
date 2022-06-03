@@ -17,6 +17,12 @@
 		<java.version>17</java.version>
         <testcontainers.version>1.17.2</testcontainers.version>
 	</properties>
+
+    <modules>
+        <module>rsocket-client</module>
+        <module>rsocket-server</module>
+    </modules>
+
     <dependencies>
         <dependency>
           <groupId>org.springframework.boot</groupId>
